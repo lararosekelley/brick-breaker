@@ -95,7 +95,6 @@ public class Board extends JPanel implements Runnable, Constants {
 	//stops the thread
 	public void stop() {
 		game.suspend();
-		//isPaused.set(true);
 	}
 
 	//ends the thread
