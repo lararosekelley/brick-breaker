@@ -37,8 +37,14 @@ Controls:
 	Right arrow: moves paddle right
 		**It is recommended to click and release the keys each time you wish to move, rather than hold them down, due to the delay built into most operating systems. You will be far more precise if you click and release for each movement.**
 
+How to download (from GitHub):
+	Go to this URL: https://github.com/tylucaskelley/BrickBreaker
+	Find the "Download ZIP" button near the bottom-right side
+	Click it!
+	Unzip the folder once it downloads.
+
 How to Run:
-	Double-click the "Brick Breaker.jar" file.
+	Double-click the "BrickBreaker.jar" file.
 	Enter your name.
 	Select an option for audio.
 	Enjoy the game!
