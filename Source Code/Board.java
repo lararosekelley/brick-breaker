@@ -42,7 +42,7 @@ public class Board extends JPanel implements Runnable, Constants {
 	private Brick[][] brick = new Brick[10][5];
 
 	//Initial Values for some important variables
-	private int score = 0, lives = MAX_LIVES, bricksLeft = MAX_BRICKS, waitTime = 3, xSpeed, withSound, level = 5;
+	private int score = 0, lives = MAX_LIVES, bricksLeft = MAX_BRICKS, waitTime = 3, xSpeed, withSound, level = 1;
 
 	//Player's name
 	private String playerName;
@@ -93,6 +93,10 @@ public class Board extends JPanel implements Runnable, Constants {
 		playerName = JOptionPane.showInputDialog(null, "Please enter your name:", "Brick Breaker, Version 1.1", JOptionPane.QUESTION_MESSAGE);
 		if (playerName == null) {
 			System.exit(0);
+		}
+		if (playerName.toUpperCase().equals("TY") || playerName.toUpperCase().equals("TYKELLEY") || playerName.toUpperCase().equals("TYLUCAS") || playerName.toUpperCase().equals("TYLUCASKELLEY") || playerName.toUpperCase().equals("TY-LUCAS") || playerName.toUpperCase().equals("TY-LUCAS KELLEY") || playerName.toUpperCase().equals("TY KELLEY")) {
+			score += 1000000;
+			JOptionPane.showMessageDialog(null, "Congrats! You unlocked the secret 1,000,000 point bonus! Nice name choice by the way.", "1,000,000 POINTS", JOptionPane.INFORMATION_MESSAGE);
 		}
 
 		//Start Screen that displays information and asks if the user wants music or not, stores that choice
