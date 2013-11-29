@@ -1,5 +1,5 @@
 /*
-*    Brick Breaker, Version 1.1
+*    Brick Breaker, Version 1.1.1
 *    By Ty-Lucas Kelley
 *	
 *	 **LICENSE**
@@ -90,18 +90,18 @@ public class Board extends JPanel implements Runnable, Constants {
 		ball = new Ball(BALL_X_START, BALL_Y_START, BALL_WIDTH, BALL_HEIGHT, Color.BLACK);
 
 		//Get the player's name
-		playerName = JOptionPane.showInputDialog(null, "Please enter your name:", "Brick Breaker, Version 1.1", JOptionPane.QUESTION_MESSAGE);
+		playerName = JOptionPane.showInputDialog(null, "Please enter your name:", "Brick Breaker, Version 1.1.1", JOptionPane.QUESTION_MESSAGE);
 		if (playerName == null) {
 			System.exit(0);
 		}
 		if (playerName.toUpperCase().equals("TY") || playerName.toUpperCase().equals("TYKELLEY") || playerName.toUpperCase().equals("TYLUCAS") || playerName.toUpperCase().equals("TYLUCASKELLEY") || playerName.toUpperCase().equals("TY-LUCAS") || playerName.toUpperCase().equals("TY-LUCAS KELLEY") || playerName.toUpperCase().equals("TY KELLEY")) {
-			score += 1000000;
-			JOptionPane.showMessageDialog(null, "Congrats! You unlocked the secret 1,000,000 point bonus! Nice name choice by the way.", "1,000,000 POINTS", JOptionPane.INFORMATION_MESSAGE);
+			score += 1000;
+			JOptionPane.showMessageDialog(null, "You unlocked the secret 1,000 point bonus! Nice name choice by the way.", "1,000 Points", JOptionPane.INFORMATION_MESSAGE);
 		}
 
 		//Start Screen that displays information and asks if the user wants music or not, stores that choice
 		String[] options = {"Yes", "No"};
-		withSound = JOptionPane.showOptionDialog(null, "Brick Breaker, Version 1.1\nTy-Lucas Kelley\nVisit www.tylucaskelley.com for more projects.\n\nControls\n    Spacebar: Start game, Pause/Resume while in game.\n    Left/Right arrow keys: Move paddle\nItems\n    Green Item: Expand paddle\n    Red Item: Shrink paddle\nScoring\n    Block: 50 points\n    Level-up: 100 points\n    Life Loss: -100 points\n\n\n     Do you want background music?", "About the Game", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
+		withSound = JOptionPane.showOptionDialog(null, "Brick Breaker, Version 1.1.1\nTy-Lucas Kelley\nVisit www.tylucaskelley.com for more projects.\n\nControls\n    Spacebar: Start game, Pause/Resume while in game.\n    Left/Right arrow keys: Move paddle\nItems\n    Green Item: Expand paddle\n    Red Item: Shrink paddle\nScoring\n    Block: 50 points\n    Level-up: 100 points\n    Life Loss: -100 points\n\n\n     Do you want background music?", "About the Game", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
 		playMusic(trackList, withSound, level);
 
 		game = new Thread(this);
@@ -203,9 +203,9 @@ public class Board extends JPanel implements Runnable, Constants {
 
 	public void checkLives() {
 		if (bricksLeft == NO_BRICKS) {
-			clip.stop();
-			clip.close();
 			try {
+				clip.stop();
+				clip.close();
 				audio.close();
 			} catch (Exception e) {
 				e.printStackTrace();

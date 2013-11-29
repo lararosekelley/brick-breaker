@@ -1,5 +1,5 @@
 /*
-*    Brick Breaker, Version 1.1
+*    Brick Breaker, Version 1.1.1
 *    By Ty-Lucas Kelley
 *	
 *	 **LICENSE**
@@ -64,20 +64,20 @@ public interface Constants {
 	public static final Color RED_BRICK_ONE = new Color(255,0,0);
 	public static final Color RED_BRICK_TWO = new Color(255,106,106);
 	public static final Color RED_BRICK_THREE = new Color(238,180,180);
-	public static final Color PURPLE_BRICK_ONE = new Color(85,26,139);
-	public static final Color PURPLE_BRICK_TWO = new Color(145,44,238);
-	public static final Color PURPLE_BRICK_THREE = new Color(178,58,238);
-	public static final Color YELLOW_BRICK_ONE = new Color(184,134,11);
-	public static final Color YELLOW_BRICK_TWO = new Color(255,215,0);
-	public static final Color YELLOW_BRICK_THREE = new Color(255,236,139);
+	public static final Color PURPLE_BRICK_ONE = new Color(128,0,128);
+	public static final Color PURPLE_BRICK_TWO = new Color(148,0,211);
+	public static final Color PURPLE_BRICK_THREE = new Color(155,48,255);
+	public static final Color YELLOW_BRICK_ONE = new Color(255,215,0);
+	public static final Color YELLOW_BRICK_TWO = new Color(255,255,0);
+	public static final Color YELLOW_BRICK_THREE = new Color(255,246,143);
 	public static final Color PINK_BRICK_ONE = new Color(205,0,205);
 	public static final Color PINK_BRICK_TWO = new Color(238,130,238);
 	public static final Color PINK_BRICK_THREE = new Color(255,225,255);
 	public static final Color GRAY_BRICK_ONE = new Color(77,77,77);
 	public static final Color GRAY_BRICK_TWO = new Color(125,125,125);
 	public static final Color GRAY_BRICK_THREE = new Color(189,189,189);
-	public static final Color GREEN_BRICK_ONE = new Color(0,100,0);
-	public static final Color GREEN_BRICK_TWO = new Color(0,139,0);
+	public static final Color GREEN_BRICK_ONE = new Color(0,139,0);
+	public static final Color GREEN_BRICK_TWO = new Color(0,205,0);
 	public static final Color GREEN_BRICK_THREE = new Color(0,255,0);
 
 	//Items
