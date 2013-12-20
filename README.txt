@@ -1,5 +1,5 @@
 /*
-*    Brick Breaker, Version 1.1.1
+*    Brick Breaker, Version 1.2
 *    By Ty-Lucas Kelley
 *	
 *	 **LICENSE**
@@ -24,14 +24,13 @@ README
 
 Author: Ty-Lucas Kelley
 Music: Dan (YouTube Channel: 8BitDanooct1)
-Current Version: 1.1.1
-Date of Last Update: 11/29/2013
+Current Version: 1.2
+Date of Last Update: 12/19/2013
 
 What's New:
-	-Fixed bug where program would freeze up after level 1 if no music was selected
-	-More reasonable reward for special name bonus. +1,000 instead of +1,000,000
-	-Icon added for game
-	-Colors brighter and more distinguishable
+	-Fixed Music bug on Linux (need to use Oracle Java, not open-jdk)
+	-Changed look and feel to emulate the OS it's running on
+	-Small bug fixes
 
 Description: 
 	This game is a clone of "Breakout", a game in which the player controls a paddle that is used to bounce a ball that breaks blocks. Items are occasionally dropped from the blocks. The game tracks the player's name, lives, level, and score as well. If the player scores high enough, they are placed on the high score board, which is displayed at the end of every game. There are an unlimited amount of levels, and the user can also select to have background music played throughout the game. Catch the green items to make your paddle larger, and avoid the red ones!
@@ -49,6 +48,7 @@ How to Download Latest Version:
 
 How to Run:
 	Double-click the "BrickBreaker.jar" file.
+		-On Ubuntu Linux, you may have to run from terminal: "java -jar BrickBreaker.jar"
 	Enter your name.
 	Select an option for audio playback.
 	Enjoy!

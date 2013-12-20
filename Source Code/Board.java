@@ -1,5 +1,5 @@
 /*
-*    Brick Breaker, Version 1.1.1
+*    Brick Breaker, Version 1.2
 *    By Ty-Lucas Kelley
 *	
 *	 **LICENSE**
@@ -33,6 +33,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.TreeMap;
+import java.awt.Toolkit.*;
 
 //Class definition
 public class Board extends JPanel implements Runnable, Constants {
@@ -90,7 +91,7 @@ public class Board extends JPanel implements Runnable, Constants {
 		ball = new Ball(BALL_X_START, BALL_Y_START, BALL_WIDTH, BALL_HEIGHT, Color.BLACK);
 
 		//Get the player's name
-		playerName = JOptionPane.showInputDialog(null, "Please enter your name:", "Brick Breaker, Version 1.1.1", JOptionPane.QUESTION_MESSAGE);
+		playerName = JOptionPane.showInputDialog(null, "Please enter your name:", "Brick Breaker, Version 1.2", JOptionPane.QUESTION_MESSAGE);
 		if (playerName == null) {
 			System.exit(0);
 		}
@@ -101,7 +102,7 @@ public class Board extends JPanel implements Runnable, Constants {
 
 		//Start Screen that displays information and asks if the user wants music or not, stores that choice
 		String[] options = {"Yes", "No"};
-		withSound = JOptionPane.showOptionDialog(null, "Brick Breaker, Version 1.1.1\nTy-Lucas Kelley\nVisit www.tylucaskelley.com for more projects.\n\nControls\n    Spacebar: Start game, Pause/Resume while in game.\n    Left/Right arrow keys: Move paddle\nItems\n    Green Item: Expand paddle\n    Red Item: Shrink paddle\nScoring\n    Block: 50 points\n    Level-up: 100 points\n    Life Loss: -100 points\n\n\n     Do you want background music?", "About the Game", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
+		withSound = JOptionPane.showOptionDialog(null, "Brick Breaker, Version 1.2\nTy-Lucas Kelley\nVisit www.tylucaskelley.com for more projects.\n\nControls\n    Spacebar: Start game, Pause/Resume while in game.\n    Left/Right arrow keys: Move paddle\nItems\n    Green Item: Expand paddle\n    Red Item: Shrink paddle\nScoring\n    Block: 50 points\n    Level-up: 100 points\n    Life Loss: -100 points\n\n\n     Do you want background music?", "About the Game", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
 		playMusic(trackList, withSound, level);
 
 		game = new Thread(this);
@@ -342,6 +343,7 @@ public class Board extends JPanel implements Runnable, Constants {
 	//fills the board
 	@Override
 	public void paintComponent(Graphics g) {
+		Toolkit.getDefaultToolkit().sync();
 		super.paintComponent(g);
 		paddle.draw(g);
 		ball.draw(g);

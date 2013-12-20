@@ -1,5 +1,5 @@
 /*
-*    Brick Breaker, Version 1.1.1
+*    Brick Breaker, Version 1.2
 *    By Ty-Lucas Kelley
 *	
 *	 **LICENSE**
@@ -36,7 +36,13 @@ public class Main extends JFrame implements Constants {
 
 	//Build and run the game
 	public static void main(String[] args) {
-		frame = new JFrame("Brick Breaker 1.1.1");
+		//Set look and feel to that of OS
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		frame = new JFrame("Brick Breaker 1.2");
 		frame.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

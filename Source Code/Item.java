@@ -1,5 +1,5 @@
 /*
-*    Brick Breaker, Version 1.1.1
+*    Brick Breaker, Version 1.2
 *    By Ty-Lucas Kelley
 *	
 *	 **LICENSE**
