@@ -52,16 +52,16 @@ public class Board extends JPanel implements Runnable, Constants {
 	private Thread game;
 
 	//Songs for background music
-	private String songOne = "Source Code/Music/One.wav";
-	private String songTwo = "Source Code/Music/Two.wav";
-	private String songThree = "Source Code/Music/Three.wav";
-	private String songFour = "Source Code/Music/Four.wav";
-	private String songFive = "Source Code/Music/Five.wav";
-	private String songSix = "Source Code/Music/Six.wav";
-	private String songSeven = "Source Code/Music/Seven.wav";
-	private String songEight = "Source Code/Music/Eight.wav";
-	private String songNine = "Source Code/Music/Nine.wav";
-	private String songTen = "Source Code/Music/Ten.wav";
+	private String songOne = "src/mp3/One.wav";
+	private String songTwo = "src/mp3/Two.wav";
+	private String songThree = "src/mp3/Three.wav";
+	private String songFour = "src/mp3/Four.wav";
+	private String songFive = "src/mp3/Five.wav";
+	private String songSix = "src/mp3/Six.wav";
+	private String songSeven = "src/mp3/Seven.wav";
+	private String songEight = "src/mp3/Eight.wav";
+	private String songNine = "src/mp3/Nine.wav";
+	private String songTen = "src/mp3/Ten.wav";
 	private String[] trackList = {songOne, songTwo, songThree, songFour, songFive, songSix, songSeven, songEight, songNine, songTen};
 	private AudioInputStream audio;
 	private Clip clip;
