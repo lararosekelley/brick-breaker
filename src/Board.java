@@ -52,16 +52,16 @@ public class Board extends JPanel implements Runnable, Constants {
 	private Thread game;
 
 	//Songs for background music
-	private String songOne = "src/mp3/One.wav";
-	private String songTwo = "src/mp3/Two.wav";
-	private String songThree = "src/mp3/Three.wav";
-	private String songFour = "src/mp3/Four.wav";
-	private String songFive = "src/mp3/Five.wav";
-	private String songSix = "src/mp3/Six.wav";
-	private String songSeven = "src/mp3/Seven.wav";
-	private String songEight = "src/mp3/Eight.wav";
-	private String songNine = "src/mp3/Nine.wav";
-	private String songTen = "src/mp3/Ten.wav";
+	private String songOne = "wav/One.wav";
+	private String songTwo = "wav/Two.wav";
+	private String songThree = "wav/Three.wav";
+	private String songFour = "wav/Four.wav";
+	private String songFive = "wav/Five.wav";
+	private String songSix = "wav/Six.wav";
+	private String songSeven = "wav/Seven.wav";
+	private String songEight = "wav/Eight.wav";
+	private String songNine = "wav/Nine.wav";
+	private String songTen = "wav/Ten.wav";
 	private String[] trackList = {songOne, songTwo, songThree, songFour, songFive, songSix, songSeven, songEight, songNine, songTen};
 	private AudioInputStream audio;
 	private Clip clip;
@@ -334,7 +334,6 @@ public class Board extends JPanel implements Runnable, Constants {
 			clip = AudioSystem.getClip();
 			clip.open(audio);
 			clip.loop(Clip.LOOP_CONTINUOUSLY);
-			System.out.println("Current song: " + audio);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

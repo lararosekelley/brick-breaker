@@ -1,18 +1,16 @@
 #Brick Breaker
-_A Java Breakout Clone_
 
-_2013 Ty-Lucas Kelley_
+*2013 Ty-Lucas Kelley*
 
-_Music by Dan ([8BitDannoct1](https://www.youtube.com/user/8BitDanooct1))_
+**Version 1.2 (Last Updated: 9/6/2014)**
 
-_Version 1.2, Last Updated: 12/19/2013_  
+Music used with permission of [owner](https://www.youtube.com/user/8BitDanooct1).
 
+---
 
-  
-  
 **LICENSE**
 
-	 This file is a part of Brick Breaker.
+	This file is a part of Brick Breaker.
 
 	Brick Breaker is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,6 +28,8 @@ _Version 1.2, Last Updated: 12/19/2013_
 
 ###What's New:
 
+* Cleaned up unneeded folders and files
+* Removed all console logging
 * Fixed music bug on Linux
 * Changed look and feel to emulate the OS it's running on
 * Various bug fixes
@@ -40,15 +40,15 @@ This game is a clone of "Breakout", a game in which the player controls a paddle
 
 ###Screenshot
 
-![Game](img/screenshot.png "Game")
+![Game](dist/img/screenshot.png "Game")
 
 ###Controls:
 
-Spacebar: starts game, pauses/resumes during game
-Left arrow: moves paddle left
-Right arrow: moves paddle right
+* Spacebar: starts game, pauses/resumes during game
+* Left arrow: moves paddle left
+* Right arrow: moves paddle right
 
-		**It is recommended to click and release the keys each time you wish to move, rather than hold them down, due to the delay built into most operating systems. You will be far more precise if you click and release for each movement.**
+**It is recommended to click and release the keys each time you wish to move, rather than hold them down, due to the delay built into most operating systems. You will be far more precise if you click and release for each movement.**
 
 ###How to Download:
 * Go to this URL: https://github.com/tylucaskelley/BrickBreaker
@@ -56,27 +56,20 @@ Right arrow: moves paddle right
 * Unzip the folder once it downloads.
 
 ###How to Run:
-* Double-click the "BrickBreaker.jar" file.
-* On Ubuntu Linux, you may have to run from terminal: 
+* Double-click the `BrickBreaker.jar` file, located in `dist`.
+* On Linux, you may have to run from terminal: 
 
 
-		$ java -jar BrickBreaker.jar
+		$ java -jar dist/BrickBreaker.jar
 
 
 * Enter your name.
 * Select an option for audio playback.
 * Enjoy!
 
-**To-Do: For myself and any who wish to contribute to the game's improvement**
+**For myself and any who wish to contribute to the game's improvement**
 
 1. Refine relationship between ball and brick: sometimes there is odd behavior when ball hits corner of a brick (technically hits 2 sides at same time).
 2. Potential sounds: when ball hits something, new level, life loss, game over, etc.
 3. Fix error where two clicks of spacebar are needed occasionally. May be a concurrency problem.
 4. Compose original soundtrack for game
-
-
-#####Thank you for playing! 
-
-For more projects and information about me, check out www.tylucaskelley.com and my GitHub profile: https://github.com/tylucaskelley/
-
-_-Ty_
